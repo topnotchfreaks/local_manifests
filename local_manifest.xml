@@ -2,9 +2,9 @@
 <manifest>
 
 	<!-- Sync trees -->
-	<project path="device/xiaomi/topaz" name="topnotchfreaks/android_device_xiaomi_topaz" remote="github" revision="16.0" />
-	<project path="vendor/xiaomi/topaz" name="topnotchfreaks/proprietary_vendor_xiaomi_topaz" remote="github" revision="16.0" />
-	<project path="device/xiaomi/topaz-kernel" name="topnotchfreaks/android_device_xiaomi_topaz-kernel" remote="github" revision="16.0" />
+	<project path="device/xiaomi/tapas" name="topnotchfreaks/android_device_xiaomi_tapas" remote="github" revision="lineage-23.0" />
+	<project path="vendor/xiaomi/tapas" name="topnotchfreaks/proprietary_vendor_xiaomi_tapas" remote="github" revision="lineage-23.0" />
+	<project path="device/xiaomi/tapas-kernel" name="topnotchfreaks/android_device_xiaomi_tapas-kernel" remote="github" revision="lineage-23.0" />
 
     <!-- Sync Hardware xiaomi -->
     <project path="hardware/xiaomi" name="lineageos/android_hardware_xiaomi" remote="github" revision="lineage-23.0" />
@@ -17,6 +17,9 @@
     <project path="hardware/qcom-caf/sm6225/media" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_media" remote="github" revision="sixteen" />
     <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" remote="github" revision="sixteen" />
     <project path="device/qcom/sepolicy_vndr/sm6225" name="topnotchfreaks/android_device_qcom_sepolicy_vndr_sm6225" remote="github" revision="sixteen" />
-    <project path="hardware/qcom-caf/sm6225/display" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_display" remote="github" revision="sixteen" />       
+    <project path="hardware/qcom-caf/sm6225/display" name="topnotchfreaks/android_hardware_qcom-caf_sm6225_display" remote="github" revision="sixteen" />
+
+    <!-- Sync Dolby -->
+    <project path="hardware/dolby" name="topnotchfreaks/android_hardware_dolby" remote="github" revision="sixteen" />     
 
 </manifest>
