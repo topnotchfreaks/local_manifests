@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="tnf"
+           fetch="https://github.com/topnotchfreaks/" />
+
 <!-- Device Sources -->
-<project name="topnotchfreaks/android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="github" revision="lineage-23.0" />
-<project name="topnotchfreaks/proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="github" revision="16" />
-<project name="topnotchfreaks/android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="github" revision="16" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="lineage-23.0" />
+<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
+<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16" />
 
 <!-- LOS Hardware -->
-<project name="topnotchfreaks/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-23.0" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="github" revision="sixteen" >
+<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tnf" revision="lineage-23.0" />
+<project name="android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="tnf" revision="sixteen" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -16,16 +19,16 @@
 </project>
 
 <!-- SEPolicy -->
-<project name="topnotchfreaks/android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="github" revision="sixteen" />
+<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="sixteen" />
 
 <!-- HALS -->
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_agm" path="hardware/qcom-caf/sm6225/audio/agm" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_pal" path="hardware/qcom-caf/sm6225/audio/pal" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_audio_primary-hal" path="hardware/qcom-caf/sm6225/audio/primary-hal" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_dataipa" path="hardware/qcom-caf/sm6225/dataipa" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_display" path="hardware/qcom-caf/sm6225/display" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_qcom-caf_sm6225_media" path="hardware/qcom-caf/sm6225/media" remote="github" revision="sixteen" />
-<project name="topnotchfreaks/android_hardware_dolby" path="hardware/dolby" remote="github" revision="16" />
+<project name="android_hardware_qcom-caf_sm6225_audio_agm" path="hardware/qcom-caf/sm6225/audio/agm" remote="tnf" revision="sixteen" />
+<project name="android_hardware_qcom-caf_sm6225_audio_pal" path="hardware/qcom-caf/sm6225/audio/pal" remote="tnf" revision="sixteen" />
+<project name="android_hardware_qcom-caf_sm6225_audio_primary-hal" path="hardware/qcom-caf/sm6225/audio/primary-hal" remote="tnf" revision="sixteen" />
+<project name="android_hardware_qcom-caf_sm6225_dataipa" path="hardware/qcom-caf/sm6225/dataipa" remote="tnf" revision="sixteen" />
+<project name="android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" remote="tnf" revision="sixteen" />
+<project name="android_hardware_qcom-caf_sm6225_display" path="hardware/qcom-caf/sm6225/display" remote="tnf" revision="sixteen" />
+<project name="android_hardware_qcom-caf_sm6225_media" path="hardware/qcom-caf/sm6225/media" remote="tnf" revision="sixteen" />
+<project name="android_hardware_dolby" path="hardware/dolby" remote="tnf" revision="16" />
     
 </manifest>
