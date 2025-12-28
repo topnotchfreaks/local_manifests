@@ -8,7 +8,7 @@
 
 <!-- LOS Hardware -->
 <project name="topnotchfreaks/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-23.0" />
-<project name="topnotchfreaks/hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="github" revision="sixteen" >
+<project name="topnotchfreaks/android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="github" revision="sixteen" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
