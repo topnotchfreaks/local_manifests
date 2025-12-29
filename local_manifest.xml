@@ -12,7 +12,7 @@
 <!-- LOS Hardware -->
 <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tnf" revision="lineage-23.0" />
 <remove-project path="hardware/qcom-caf/common" />
-<project name="android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="tnf" revision="sixteen" >
+<project name="android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" groups="qcom" remote="tnf" revision="16" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
