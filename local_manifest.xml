@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="tnf"
-           fetch="https://github.com/topnotchfreaks/" />
+  <remote name="tnf" fetch="https://github.com/topnotchfreaks/" />
+  <remote name="tapas-playground-ssh" fetch="git@github.com:SM6225-Android-Playground" />
+  <remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
+  <remote name="rexons-aosp" fetch="git@github.com:Rexons-AOSP-Projects" />
 
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="lineage-23.0" />
@@ -58,6 +60,11 @@
 <project name="android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" remote="tnf" revision="sixteen" />
 <project name="android_hardware_qcom-caf_sm6225_display" path="hardware/qcom-caf/sm6225/display" remote="tnf" revision="sixteen" />
 <project name="android_hardware_qcom-caf_sm6225_media" path="hardware/qcom-caf/sm6225/media" remote="tnf" revision="sixteen" />
-<project name="android_hardware_dolby" path="hardware/dolby" remote="tnf" revision="16" />
     
+<!-- Dolby & MiCam -->
+<project path="hardware/dolby" name="android_hardware_dolby" remote="rexons-aosp" revision="lunaris" />
+<project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tapas-playground-ssh" revision="16" />
+<project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
+    
+
 </manifest>
