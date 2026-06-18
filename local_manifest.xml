@@ -50,7 +50,6 @@
   </project>
 <!-- SE-Policy Stuff -->
 <project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="16.2" />
-<project name="android_device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="tnf" revision="16" />
 
 <!-- HALS -->
 <project path="hardware/qcom-caf/sm6225/audio/agm" name="android_hardware_qcom-caf_sm6225_audio_agm" remote="tnf" revision="16.2" />
