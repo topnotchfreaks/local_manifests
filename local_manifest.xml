@@ -5,7 +5,7 @@
 <remote name="masood" fetch="https://gitlab.com/Masood-J" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="16" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="lumine-16" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
 <project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
 
@@ -64,5 +64,8 @@
 <project path="hardware/dolby" name="android_hardware_dolby" remote="tnf" revision="lunaris" />
 <project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tnf" revision="16" />
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="masood" revision="16" />
+
+<!-- Lineage Priv Keys -->
+<project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv_keys" remote="tnf" revision="lineage-23.2" />
     
 </manifest>
