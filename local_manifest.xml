@@ -4,7 +4,7 @@
 <remote name="tnf" fetch="https://github.com/topnotchfreaks" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="lumine-16" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="16" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
 <project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
 
