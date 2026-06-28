@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote fetch="https://github.com/Xiaomi-Redmi-Pad-SE-Resources"
+          name="xun-dev"
+          revision="lineage-23.2-caf-sm6225" />
 
-<remote name="tnf" fetch="https://github.com/topnotchfreaks" />
-    
-<!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="16" />
-<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
-<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
-
-
-<!-- LOS Hardware Stuff -->
-<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tnf" revision="lineage-23.2" />
-<remove-project path="hardware/qcom-caf/common" />
-<project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="tnf" revision="16" >
+  <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="xun-dev" revision="lineage-23.2">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -47,23 +40,22 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
   </project>
-<!-- SE-Policy Stuff -->
-<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="16.2" />
 
-<!-- HALS -->
-<project path="hardware/qcom-caf/sm6225/audio/agm" name="android_hardware_qcom-caf_sm6225_audio_agm" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/audio/pal" name="android_hardware_qcom-caf_sm6225_audio_pal" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="android_hardware_qcom-caf_sm6225_audio_primary-hal" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/dataipa" name="android_hardware_qcom-caf_sm6225_dataipa" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="android_hardware_qcom-caf_sm6225_data-ipa-cfg-mgr" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/display" name="android_hardware_qcom-caf_sm6225_display" remote="tnf" revision="16.2" />
-<project path="hardware/qcom-caf/sm6225/media" name="android_hardware_qcom-caf_sm6225_media" remote="tnf" revision="16.2" />
+  <project path="packages/apps/DolbyAtmos" name="roms-experimental/android_packages_apps_DolbyAtmos" remote="github" revision="lineage-23.2" />
 
-<!-- Dolby & MiCam -->
-<project path="hardware/dolby" name="android_hardware_dolby" remote="tnf" revision="lunaris" />
-<project path="packages/apps/LunarisDolby" name="android_packages_apps_LunarisDolby" remote="tnf" revision="16.0" />
+  <!-- Sync required hals and sepolicy -->
+  <project path="device/qcom/sepolicy_vndr/sm6225" name="android_device_qcom_sepolicy_vndr" groups="qcom,divar-vendor" remote="xun-dev" />
+  <project path="hardware/qcom-caf/sm6225/audio/agm" name="android_vendor_qcom_opensource_agm" groups="qcom,divar-audio" remote="xun-dev" />
+  <project path="hardware/qcom-caf/sm6225/audio/graphservices" name="LineageOS/android_vendor_qcom_opensource_audioreach-graphservices" groups="qcom" remote="github" revision="lineage-23.2-caf-sm8550" />
+  <project path="hardware/qcom-caf/sm6225/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" groups="qcom,divar-audio" remote="xun-dev" />
+  <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="android_hardware_qcom_audio-ar" groups="qcom,divar-audio" remote="xun-dev" />
+  <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,divar-vendor" remote="xun-dev" />
+  <project path="hardware/qcom-caf/sm6225/dataipa" name="LineageOS/android_vendor_qcom_opensource_dataipa" groups="qcom,kailua-vendor" remote="github" revision="lineage-23.2-caf-sm8550" />
+  <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" groups="qcom" remote="xun-dev" />
+  <project path="hardware/xiaomi" name="roms-experimental/android_hardware_xiaomi" remote="github" revision="lineage-23.2" />
 
-<!-- Lineage Priv Keys -->
-<project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv/keys" remote="tnf" revision="lineage-23.2" />
-    
+  <!-- Sync xun trees -->
+  <project path="device/xiaomi/xun" name="android_device_xiaomi_xun" remote="xun-dev" revision="lineage-23.2" />
+  <project path="device/xiaomi/xun-kernel" name="android_device_xiaomi_xun-kernel" remote="xun-dev" revision="lineage-23.2" />
+  <project path="vendor/xiaomi/xun" name="android_vendor_xiaomi_xun" remote="xun-dev" revision="lineage-23.2" />
 </manifest>
