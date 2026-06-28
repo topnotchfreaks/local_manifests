@@ -2,7 +2,6 @@
 <manifest>
 
 <remote name="tnf" fetch="https://github.com/topnotchfreaks" />
-<remote name="masood" fetch="https://gitlab.com/Masood-J" />
     
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="lumine-16" />
