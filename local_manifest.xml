@@ -66,6 +66,6 @@
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="masood" revision="16" />
 
 <!-- Lineage Priv Keys -->
-<project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv_keys" remote="tnf" revision="lineage-23.2" />
+<project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv/keys" remote="tnf" revision="lineage-23.2" />
     
 </manifest>
