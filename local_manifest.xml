@@ -9,6 +9,6 @@
 <project name="android_device_xiaomi_topaz-kernel" path="device/xiaomi/topaz-kernel" remote="tnf" revision="13" />
 
 <!-- LOS Hardware Stuff -->
-<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tnf" revision="lineage-20.0" />
+<project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="tnf" revision="lineage-20" />
 
 </manifest>
