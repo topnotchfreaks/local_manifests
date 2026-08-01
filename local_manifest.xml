@@ -4,7 +4,7 @@
 <remote name="tnf" fetch="https://github.com/topnotchfreaks" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="16" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="ascp-17" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
 <project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
 
@@ -48,7 +48,7 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
   </project>
 <!-- SE-Policy Stuff -->
-<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="16.2" />
+<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="lineage-24.0" />
 
 <!-- HALS -->
 <project path="hardware/qcom-caf/sm6225/audio/agm" name="android_hardware_qcom-caf_sm6225_audio_agm" remote="tnf" revision="16.2" />
