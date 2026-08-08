@@ -2,9 +2,10 @@
 <manifest>
 
 <remote name="tnf" fetch="https://github.com/topnotchfreaks" />
+<remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="16" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="17-new" />
 <project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
 <project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
 
@@ -50,7 +51,7 @@
 
 <!-- SE-Policy Stuff -->
 <project name="device_xiaomi_sepolicy" path="device/xiaomi/sepolicy" remote="tnf" revision="16" />
-<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="16.2" />
+<project name="android_device_qcom_sepolicy_vndr_sm6225" path="device/qcom/sepolicy_vndr/sm6225" remote="tnf" revision="lineage-24.0" />
 
 <!-- HALS -->
 <project path="hardware/qcom-caf/sm6225/audio/agm" name="android_hardware_qcom-caf_sm6225_audio_agm" remote="tnf" revision="16.2" />
@@ -64,6 +65,8 @@
 <!-- Dolby & MiCam -->
 <project path="hardware/dolby" name="android_hardware_dolby" remote="tnf" revision="lunaris" />
 <project path="packages/apps/LunarisDolby" name="android_packages_apps_LunarisDolby" remote="tnf" revision="16.0" />
+<project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tnf" revision="16" />
+<project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
 <!-- Lineage Priv Keys -->
 <project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv/keys" remote="tnf" revision="lineage-23.2" />
