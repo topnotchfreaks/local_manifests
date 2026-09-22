@@ -8,7 +8,6 @@
   <project path="device/xiaomi/topaz" name="device_xiaomi_topaz" remote="tnf" revision="13" clone-depth="1" />
   <project path="vendor/xiaomi/topaz" name="vendor_xiaomi_topaz" remote="tnf" revision="13" clone-depth="1" />
   <project path="device/xiaomi/topaz-kernel" name="device_xiaomi_topaz-kernel" remote="tnf" revision="13" clone-depth="1" />
-  <project path="vendor/private" name="vendor_private" remote="neo" revision="main" clone-depth="1" />
 
 <!-- Hals -->
   <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
