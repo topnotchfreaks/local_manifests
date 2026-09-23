@@ -2,6 +2,7 @@
 <manifest>
 
 <remote name="tnf" fetch="https://github.com/topnotchfreaks" />
+<remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
     
 <!-- Device Sources -->
 <project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="16" />
@@ -66,6 +67,8 @@
 <!-- Dolby & MiCam -->
 <project path="hardware/dolby" name="android_hardware_dolby" remote="tnf" revision="lunaris" />
 <project path="packages/apps/LunarisDolby" name="android_packages_apps_LunarisDolby" remote="tnf" revision="16.0" />
+<project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tnf" revision="16" />
+<project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
 <!-- Lineage Priv Keys -->
 <project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv/keys" remote="tnf" revision="lineage-23.2" />
