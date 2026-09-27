@@ -5,9 +5,9 @@
 <remote name="tapas-playground-gitlab" fetch="https://gitlab.com/Masood-J" />
     
 <!-- Device Sources -->
-<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="17-new" />
-<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16" />
-<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-gki" />
+<project name="android_device_xiaomi_tapas" path="device/xiaomi/tapas" remote="tnf" revision="17-libperfmgr" />
+<project name="proprietary_vendor_xiaomi_tapas" path="vendor/xiaomi/tapas" remote="tnf" revision="16-new" />
+<project name="android_device_xiaomi_tapas-kernel" path="device/xiaomi/tapas-kernel" remote="tnf" revision="16-newfw" />
 
 
 <!-- LOS Hardware Stuff -->
