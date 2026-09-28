@@ -70,6 +70,9 @@
 <project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tnf" revision="16" />
 <project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
+<!-- Add-on -->
+<project path="packages/apps/KProfiles" name="AxionAOSP-devices/android_packages_apps_KProfiles" remote="github" revision="axion" />
+
 <!-- Lineage Priv Keys -->
 <project name="android_vendor_lineage-priv_keys" path="vendor/lineage-priv/keys" remote="tnf" revision="lineage-23.2" />
     
