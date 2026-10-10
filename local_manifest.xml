@@ -67,8 +67,6 @@
 <!-- Dolby & MiCam -->
 <project path="hardware/dolby" name="android_hardware_dolby" remote="tnf" revision="lunaris" />
 <project path="packages/apps/LunarisDolby" name="android_packages_apps_LunarisDolby" remote="tnf" revision="16.0" />
-<project path="device/xiaomi/tapas-miuicamera" name="android_device_xiaomi_tapas-miuicamera" remote="tnf" revision="16" />
-<project path="vendor/xiaomi/tapas-miuicamera" name="vendor_xiaomi_tapas-miuicamera" remote="tapas-playground-gitlab" revision="16" />
 
 <!-- Add-on -->
 <project path="packages/apps/KProfiles" name="AxionAOSP-devices/android_packages_apps_KProfiles" remote="github" revision="axion" />
